@@ -1,0 +1,40 @@
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSansSC-Bold.otf');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSansSC-Thin.otf');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSansSC-Regular.otf');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSansSC-Medium.otf');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSansSC-Thin.otf');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100;
+}
+
+html body.page {
+    font-family: 'Noto Sans', sans-serif;
+} 
