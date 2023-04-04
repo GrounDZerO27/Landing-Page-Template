@@ -2681,7 +2681,7 @@ a {
 .divider {
   height: 1px;
   overflow: hidden;
-  background-color: #e0e0e0;
+  background-color: #34384b;
 }
 
 blockquote {
@@ -2944,9 +2944,9 @@ ul.staggered-list li {
 }
 
 .page-footer {
-  padding-top: 20px;
+  padding-top: 40px;
   color: #fff;
-  background-color: #ee6e73;
+  background-color: #282b3e;
 }
 
 .page-footer .footer-copyright {
@@ -3792,6 +3792,8 @@ table span.badge {
     margin-left: auto;
     left: auto;
     right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .row .col.offset-m1 {
     margin-left: 8.3333333333%;
@@ -4309,7 +4311,10 @@ nav i.material-icons {
 nav .nav-wrapper {
   position: relative;
   height: 100%;
+  right: -15px;
 }
+
+
 
 @media only screen and (min-width: 993px) {
   nav a.sidenav-trigger {
@@ -5074,10 +5079,11 @@ small {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
+  border: 1px solid #dddee4;
 }
 
 .tabs .tab a {
-  color: rgba(238, 110, 115, 0.7);
+  color: #282b3e;
   display: block;
   width: 100%;
   height: 100%;
@@ -5090,13 +5096,13 @@ small {
 }
 
 .tabs .tab a:focus, .tabs .tab a:focus.active {
-  background-color: rgba(246, 178, 181, 0.2);
+  background-color: #fafafa;
   outline: none;
 }
 
 .tabs .tab a:hover, .tabs .tab a.active {
-  background-color: transparent;
-  color: #ee6e73;
+  background-color: #fafafa;
+  color: #282b3e;
 }
 
 .tabs .tab.disabled a,
@@ -5107,9 +5113,9 @@ small {
 
 .tabs .indicator {
   position: absolute;
-  bottom: 0;
-  height: 2px;
-  background-color: #f6b2b5;
+  top: 0;
+  height: 4px;
+  background-color: #00A758;
   will-change: left, right;
 }
 
@@ -5545,7 +5551,7 @@ button.btn-floating {
 }
 
 .dropdown-content {
-  background-color: #fff;
+  background-color: #263238;
   margin: 0;
   display: none;
   min-width: 100px;
@@ -5574,7 +5580,7 @@ button.btn-floating {
 }
 
 .dropdown-content li:hover, .dropdown-content li.active {
-  background-color: #eee;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .dropdown-content li:focus {
@@ -5588,7 +5594,7 @@ button.btn-floating {
 
 .dropdown-content li > a, .dropdown-content li > span {
   font-size: 16px;
-  color: #26a69a;
+  color: #fff;
   display: block;
   line-height: 22px;
   padding: 14px 16px;
