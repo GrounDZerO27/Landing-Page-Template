@@ -30,8 +30,7 @@ $(document).ready(function(){
       $(hoverItem).hide();
   });
 
- 
-
+  
 });
 
 
@@ -41,7 +40,9 @@ $(".dropdown-trigger").click(function() {
   setTimeout(function() {
     $('.dropdown-content').css({
       'top': '80px',
-      'left': '-20px'
+      'left': '-45px',
+      'width': '150px',
+
     });
 
     console.log('style init');

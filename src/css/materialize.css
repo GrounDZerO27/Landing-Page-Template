@@ -2978,6 +2978,7 @@ table {
   display: table;
   border-collapse: collapse;
   border-spacing: 0;
+  overflow-y: scroll;
 }
 
 table.striped tr {
@@ -5089,7 +5090,6 @@ small {
   height: 100%;
   padding: 0 24px;
   font-size: 14px;
-  text-overflow: ellipsis;
   overflow: hidden;
   -webkit-transition: color .28s ease, background-color .28s ease;
   transition: color .28s ease, background-color .28s ease;
