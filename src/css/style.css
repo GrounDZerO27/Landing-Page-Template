@@ -459,6 +459,62 @@ code {
   bottom: 10px;
 }
 
+.sort {
+  cursor: pointer;
+}
+
+.sort span {
+  position: relative;
+  /* display: table; */
+  padding-right: 19px;
+  font-weight: bold;
+  margin: 0px auto;
+}
+
+.sort span .before {
+  content: " ";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-bottom: 4px solid rgb(216, 216, 216);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -6px;
+}
+
+.sort span .after {
+  content: " ";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-top: 4px solid rgb(216, 216, 216);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: 1px;
+}
+
+.sort.sort_down span .before { border-bottom-color: rgb(216, 216, 216); }
+
+.sort.sort_down span .after { border-top-color: rgb(200, 37, 55); }
+
+.sort.sort_up span .before { border-bottom-color: rgb(200, 37, 55); }
+
+.sort.sort_up span .after { border-top-color: rgb(216, 216, 216); }
+
+a.btn_buy { width: 24px; height: 24px; padding: 10px; display: block; margin: 0px auto; position: relative; }
+
+a.btn_buy i { content: " "; display: block; width: 24px; height: 24px; position: absolute; top: 0px; left: -10px; background: url("../images/btn_buy.png") left center / 48px no-repeat; }
+
+a.btn_buy:hover i { background-position: right center; }
+
+
+
 .cmp-text__cta--secondarylink a:before, a .cmp-text__cta--secondarylink:before {
   speak: none;
   font-style: normal;

@@ -31,6 +31,8 @@
                             <!-- Login Menu -->
                             <ul class="top-slide-menu hide-on-med-and-down">
                                 <li class="top-menu-list-item">
+                                    <a href="/Channel/1090543"><img class="responsive-img" alt="" src="images/Top_Login.svg"> <span>客户服务</span></a>
+                                </li><li class="top-menu-list-item">
                                     <a href="https://etrade.manulifefund.com.cn/etrading/accoreq/OCRauthentication.do?method=doOCRInit"><img class="responsive-img" alt="" src="images/Top_Login.svg"> <span>开户</span></a>
                                 </li>
                                 <li class="top-menu-list-item">
@@ -624,86 +626,7 @@
         <script src="js/init.js"></script>
 
         <script src="https://tracefore-web.s3.us-west-2.amazonaws.com/cdn/manulife/test/indexfundvalue-utf8.js"></script>
-        <script>
-            var column_nav = '基金名称/基金代码/日期/净值/累计净值/日涨跌/近一月/近三月/近一年/风险等级';
-            var column_profit = '基金名称/基金代码/日期/每万份基金净收益/七日年化收益率/日涨跌/近一月/近三月/近一年/风险等级';
-
-            var fundsTbl = $('.funds-table');
-            
-            function initFundTables() {
-                // load dynamic data to each table in #tab1-6
-                var ds = [info_gp, info_hh, info_zs, info_zq, info_hb, info_qdii];
-                for (let i = 0; i < ds.length; i++) {
-                    const fundata = ds[i];
-                    // info_hb have to use column_profit 
-                    var column = (i === 4 ? column_profit : column_nav);
-                    // load table
-                    loadfundtable('#tab'+(i+1), fundata, column);
-                }
-            }
-
-            function loadfundtable(element, fundata, column) {
-                $(element).html('');
-                var tb = $('<table class="responsive-table table-border text-lite funds-table"><thead></thead><tbody></tbody></table>');
-                tb.find('thead').html(getThead(column));
-                tb.find('tbody').html(getTbody(fundata));
-                $(element).append(tb);
-            }
-
-            function getThead(column) {
-                var cols = column.split('/').map((name) => '<th class="">'+name+'</th>').join('');
-                return $('<tr></tr>').append(cols);
-            }
-
-            function getTbody(fundata) {
-                var rows = [];
-                fundata.forEach(function name(item) {
-                    var cells = [];
-                    cells.push(item.name);
-                    cells.push(item.code);
-                    cells.push(item.date);
-                    cells.push(item.netValue || item.profit);
-                    cells.push(item.netValueSum || item.profitRate);
-                    cells.push(item.dailyRiseAndFall);
-                    cells.push(item.oneMonth);
-                    cells.push(item.threeMonth);
-                    cells.push(item.oneYear);
-                    cells.push(item.riskLevel);
-
-                    var row = cells.map(function(value) {
-                        var m = /(.+)%/.exec(value);
-                        var fv = 0;
-                        if(m && m[1]) {
-                            fv = parseFloat(m[1]);
-                        }
-                        if(fv > 0 || fv < 0) {
-                            var cls = (fv < 0 ? 'negative' : 'positive');
-                            return '<td class="'+'responsive-table-width-td'+' '+cls+'">'+value+'</td>';
-                        } else {
-                            return '<td class="responsive-table-width-td">'+value+'</td>';
-                        }
-                        // if(m && m[1]) {
-                            
-                        //     var cls = (fv < 0 ? 'negative' : 'positive');
-                        //     return '<td class="'+cls+'">'+value+'</td>';
-                        // } else {
-                        //     return '<td>'+value+'</td>';
-                        // }
-                    }).join('');
-                    rows.push($('<tr></tr>').append(row));
-                });
-                return rows;
-            }
-
-            $(fundsTbl).css({
-                'height': '500px',
-                'overflow-y': 'scroll'
-            });
-
-            // Initial fund data table
-            initFundTables();
-            
-        </script>
+        <script src="js/index.js"></script>
     </body>
 
 </html>
