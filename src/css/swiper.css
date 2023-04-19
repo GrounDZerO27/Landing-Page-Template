@@ -1,0 +1,75 @@
+.custom-swiper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-custom-prev,
+.swiper-button-custom-next {
+  padding: 1em;
+  cursor: pointer;
+  color: white;
+  opacity: 0.4;
+  transition: 0.1s;
+  user-select: none;
+}
+
+.swiper-button-custom-prev:hover,
+.swiper-button-custom-next:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.swiper-custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em 0;
+}
+
+.swiper-custom-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.swiper-custom-pagination .swiper-pagination-bullet-active {
+  transition: 0.3s;
+  transform: scale(1.1);
+  background: #ffffff;
+  cursor: default;
+}
+
+.swiper {
+  width: 100%;
+  height: 350px;
+  display: block;
+  position: relative;
+}
+
+.swiper .swiper-wrapper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    /*background-image: linear-gradient(-45deg, #36d1dc, #5b86e5);*/
+    color: white;
+    font-size: 5em;
+    width: 100% !important;
+}
+
+.swiper-custom-pagination {
+  position: relative;
+  z-index: 1;
+  top: -60px
+}
+
+
