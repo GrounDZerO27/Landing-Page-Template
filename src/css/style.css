@@ -912,18 +912,14 @@ a.btn_buy:hover i { background-position: right center; }
 }
 
 .container .wrapper .notice_c .title{
-  display: inline-block; 
-  float: left;
-  height: 20px; 
-  line-height: 1.5rem;
-  background-size: 21px;
-  background-position: left center;
+  position: absolute;
+  margin-right: 35px;
 }
 .container .wrapper .notice_c .notice_swiper{
   width: 420px; height: 53px;
   display: inline-block; 
-  float: left;
   overflow: hidden;
+  left: 70px;
 }
 .container .wrapper .notice_c .notice_swiper .swiper-slide{
   width: 100%; 
@@ -1394,6 +1390,10 @@ a.btn_buy:hover i { background-position: right center; }
     position: relative;
     margin-bottom: -20px;
   }
+
+  table.responsive-table th {
+    display: flex;
+  }
 }
 
 
@@ -1404,12 +1404,8 @@ a.btn_buy:hover i { background-position: right center; }
   }
 
   .container .wrapper .notice_c .title {
-    height: 0.507rem;
-    font-size: 1rem;
-    background-size: 0.44rem;
-    display: inline-block;
-    line-height: inherit;
-    padding-top: 0.05rem;
+    position: absolute;
+    margin-right: 35px;
   }
  
   .header {
@@ -1457,6 +1453,10 @@ a.btn_buy:hover i { background-position: right center; }
   .tab-5 .responsive-table-width-th:nth-child(5) {
     width: inherit;
   } 
+
+  .responsive-table .responsive-table-width-td a.btn_buy {
+    margin: 0px 24px;
+  }
 
 }
 
@@ -1564,8 +1564,6 @@ a.btn_buy:hover i { background-position: right center; }
   }
 
   .container .wrapper .notice_c .notice_swiper {
-    float: none;
-    overflow: hidden;
     font-size: 9px;
   }
 
