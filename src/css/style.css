@@ -949,6 +949,15 @@ a.btn_buy:hover i { background-position: right center; }
   width: 11%;
 } 
 
+.tab-5 .responsive-table-width-th:nth-child(4) {
+  width: 13%;
+} 
+
+.tab-5 .responsive-table-width-th:nth-child(5) {
+  width: 12%;
+} 
+
+
 .fixed_b_con{
   width: 100%;
   position: fixed; bottom: 0; left: 0; z-index: 10;
@@ -1114,6 +1123,12 @@ a.btn_buy:hover i { background-position: right center; }
   background-color: #0068B6;
 }
 
+.table-tab {
+  max-height: 650px;
+  height: auto;
+  overflow-y: auto;
+}
+
 @media screen and (max-width: 1200px){
   .fixed_b_con .wrap .fixed_list{
       padding-left: 20px; float: right;
@@ -1242,6 +1257,7 @@ a.btn_buy:hover i { background-position: right center; }
   .custom-grid {
     width: 20% !important;
   }
+
 }
 
 @media only screen and (max-width: 1024px) {

@@ -97,7 +97,7 @@ function applySort(theader, upOrDown) {
 function getThead(column) {
     // var cols = column.split('/').map((name) => '<th class="">' + name + '</th>').join('');
     // '<div class="sort"><span>'+cols+'<i class="before"></i><i class="after"></i></span></div>'
-    var cols = column.split('/').map((name) => '<th><div><span>' + name + '<i class="before"></i><i class="after"></i></span></div></th>').join('');
+    var cols = column.split('/').map((name) => '<th class="responsive-table-width-th"><div><span>' + name + '<i class="before"></i><i class="after"></i></span></div></th>').join('');
     return $('<tr></tr>').append(cols);
 }
 
