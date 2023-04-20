@@ -1450,6 +1450,14 @@ a.btn_buy:hover i { background-position: right center; }
     padding: 0;
   }
 
+  .tab-5 .responsive-table-width-th:nth-child(4) {
+    width: inherit;
+  } 
+  
+  .tab-5 .responsive-table-width-th:nth-child(5) {
+    width: inherit;
+  } 
+
 }
 
 @media only screen and (max-width: 540px) {
