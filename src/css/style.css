@@ -1153,6 +1153,21 @@ a.btn_buy:hover i { background-position: right center; }
   }
 }
 
+@media  screen and (max-width: 1680px) {
+  .banner .swiper-container.banner_swiper {
+    height: 350px;
+  }
+
+  .banner .swiper-container.banner_swiper img {
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .swiper-pagination {
+    bottom: 10px;
+  }
+}
+
 @media  screen and (max-width: 1620px) {
   .banner .swiper-container.banner_swiper {
     height: 350px;
