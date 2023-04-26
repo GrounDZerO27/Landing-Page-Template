@@ -91,13 +91,17 @@ function applySort(theader, upOrDown) {
         return 0;
     }
     // tr compare
-    trList.sort(compareFloat).map((i,item) => $(item).prependTo(tbody));
+    trList.sort(compareFloat).map(function(i,item) {
+        $(item).prependTo(tbody);
+    });
 }
 
 function getThead(column) {
     // var cols = column.split('/').map((name) => '<th class="">' + name + '</th>').join('');
     // '<div class="sort"><span>'+cols+'<i class="before"></i><i class="after"></i></span></div>'
-    var cols = column.split('/').map((name) => '<th class="responsive-table-width-th"><div><span>' + name + '<i class="before"></i><i class="after"></i></span></div></th>').join('');
+    var cols = column.split('/').map(function(name) {
+        return '<th class="responsive-table-width-th"><div><span>' + name + '<i class="before"></i><i class="after"></i></span></div></th>'
+    }).join('');
     return $('<tr></tr>').append(cols);
 }
 

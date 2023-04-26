@@ -765,7 +765,7 @@ a.btn_buy:hover i { background-position: right center; }
 .fab-icon-up {
   content: url('../images/FAB_Up-svg.png');
   position: relative;
-  bottom: 9px;
+  bottom: 5px;
 }
 
 .footer-icon-sticky {
