@@ -945,10 +945,6 @@ a.btn_buy:hover i { background-position: right center; }
   width: 11%;
 } 
 
-.responsive-table-width-td:nth-child(5) {
-  width: 11%;
-} 
-
 .tab-5 .responsive-table-width-th:nth-child(4) {
   width: 13%;
 } 
