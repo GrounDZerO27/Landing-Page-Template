@@ -765,7 +765,6 @@ a.btn_buy:hover i { background-position: right center; }
 .fab-icon-up {
   content: url('../images/FAB_Up-svg.png');
   position: relative;
-  bottom: 5px;
   margin-top: auto;
   margin-bottom: auto;
 }
