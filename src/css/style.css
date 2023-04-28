@@ -562,7 +562,7 @@ a.btn_buy:hover i { background-position: right center; }
 }
 
 .cmp-text__cta--secondarylink a:before, a .cmp-text__cta--secondarylink:before {
-  content: url('../images/RightOutlined.svg');
+  content: url('../images/RightOutlined-svg.png');
 }
 
 .cmp-text__cta--primarylink a, a .cmp-text__cta--primarylink {
@@ -584,11 +584,11 @@ a.btn_buy:hover i { background-position: right center; }
 }
 
 .cmp-text__cta--primarylink a:before, a .cmp-text__cta--primarylink:before {
-  content: url('../images/RightFilled.svg');
+  content: url('../images/RightFilled-svg.png');
 }
 
 .cmp-text__cta--primarylink a:hover:before, a .cmp-text__cta--primarylink:hover:before {
-  content: url('../images/Right_hover.svg');
+  content: url('../images/Right_hover-svg.png');
 }
 
 .cmp-primary-btn {
@@ -737,21 +737,21 @@ a.btn_buy:hover i { background-position: right center; }
 }
 
 .icon-tool-1 {
-  content: url('../images/Tool_1.svg');
+  content: url('../images/Tool_1-svg.png');
 }
 
 .icon-tool-2 {
-  content: url('../images/Tool_2.svg');
+  content: url('../images/Tool_2-svg.png');
 }
 
 .icon-tool-3 {
-  content: url('../images/Tool_3.svg');
+  content: url('../images/Tool_3-svg.png');
 }
 .icon-tool-4 {
-  content: url('../images/Tool_4.svg');
+  content: url('../images/Tool_4-svg.png');
 }
 .icon-tool-5 {
-  content: url('../images/Tool_5.svg');
+  content: url('../images/Tool_5-svg.png');
 }
 
 .fab-icon-comment {
@@ -766,6 +766,8 @@ a.btn_buy:hover i { background-position: right center; }
   content: url('../images/FAB_Up-svg.png');
   position: relative;
   bottom: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .footer-icon-sticky {
@@ -832,7 +834,7 @@ a.btn_buy:hover i { background-position: right center; }
 }
 
 .positive::before {
-  content:url('../images/Triangle_up.svg');
+  content:url('../images/Triangle_up-svg.png');
   position: relative;
   top: -2px;
   left: -4px;
@@ -843,7 +845,7 @@ a.btn_buy:hover i { background-position: right center; }
 }
 
 .negative::before {
-  content:url('../images/Triangle_down.svg');
+  content:url('../images/Triangle_down-svg.png');
   position: relative;
   top: -2px;
   left: -4px;
@@ -1389,7 +1391,7 @@ a.btn_buy:hover i { background-position: right center; }
   }
 
   img.custom-img-width {
-    width: 55%;
+    width: 100%;
   }
 
   .page-footer a {
@@ -1454,7 +1456,7 @@ a.btn_buy:hover i { background-position: right center; }
   }
 
   img.custom-img-width {
-    width: initial;
+    width: 70%;
   }
 
   .img {
@@ -1583,7 +1585,7 @@ a.btn_buy:hover i { background-position: right center; }
   .custom-img-width {
     width: 70%;
   }
-
+  
   .img {
     height: 100px;
   }
